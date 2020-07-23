@@ -1,0 +1,559 @@
+curl --location --request POST 'https://anypoint.mulesoft.com/accounts/login' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+	"username": "sutheer",
+	"password": "Dorittos+2"
+}'
+
+
+{
+  "access_token": "d1265122-70f9-4ae4-a81c-0065c8753731",
+  "token_type": "bearer",
+  "redirectUrl": "/home/"
+}
+
+.access_token
+--------------
+
+curl --location --request GET 'https://anypoint.mulesoft.com/accounts/api/me' \
+--header 'Authorization: Bearer c102c373-d025-43f0-8a60-16e5d8eafd90' \
+--header 'Cookie: XSRF-TOKEN=sAYnPlGR-o2w0vg-VOqLE2jsPU0F7OdIa-LU; _csrf=V5Ds5CZNKu5ANfCG6WQdzMla; mulesoft.sess=eyJpZCI6IkNBTWFEbFNTekRJcDhYdXNzNlJNNnFiVERJWlhNaUZtIiwicGFzc3BvcnQiOnsidXNlciI6eyJ1c2VyX2lkIjoiODJmNDg2NjQtMmMzMy00MTM1LTk2ZTUtZWVlZmI3ZGRkMDA3In19fQ==; mulesoft.sess.sig=JGI_ayKz9KPlZBmI1baJ1DdTfLI'
+
+
+{
+  "user": {
+    "id": "82f48664-2c33-4135-96e5-eeefb7ddd007",
+    "createdAt": "2020-07-21T19:41:18.887Z",
+    "updatedAt": "2020-07-23T14:01:00.155Z",
+    "organizationId": "ca0e1a7e-71a3-4463-bb20-c39a2955f8a5",
+    "firstName": "Sudheer",
+    "lastName": "K",
+    "email": "gnvksudheer@yahoo.com",
+    "phoneNumber": "9876543210",
+    "idprovider_id": "mulesoft",
+    "username": "sutheer",
+    "enabled": true,
+    "deleted": false,
+    "lastLogin": "2020-07-23T14:01:00.000Z",
+    "type": "host",
+    "organizationPreferences": {},
+    "organization": {
+      "name": "TestOrg",
+      "id": "ca0e1a7e-71a3-4463-bb20-c39a2955f8a5",
+      "createdAt": "2020-07-21T19:41:18.887Z",
+      "updatedAt": "2020-07-21T19:41:18.887Z",
+      "ownerId": "82f48664-2c33-4135-96e5-eeefb7ddd007",
+      "clientId": "cc461062cdf54a9281a4b3e4e9fd9c46",
+      "idprovider_id": "mulesoft",
+      "isFederated": false,
+      "parentOrganizationIds": [],
+      "subOrganizationIds": [],
+      "tenantOrganizationIds": [],
+      "domain": "testorg-5",
+      "isMaster": true,
+      "subscription": {
+        "category": "Developer",
+        "type": "Trial",
+        "expiration": "2020-08-20T19:41:19.433Z"
+      },
+      "properties": {},
+      "entitlements": {
+        "createEnvironments": true,
+        "globalDeployment": false,
+        "createSubOrgs": true,
+        "hybrid": {
+          "enabled": true
+        },
+        "hybridInsight": true,
+        "hybridAutoDiscoverProperties": true,
+        "vCoresProduction": {
+          "assigned": 0,
+          "reassigned": 0
+        },
+        "vCoresSandbox": {
+          "assigned": 1,
+          "reassigned": 0
+        },
+        "vCoresDesign": {
+          "assigned": 1,
+          "reassigned": 0
+        },
+        "staticIps": {
+          "assigned": 0,
+          "reassigned": 0
+        },
+        "vpcs": {
+          "assigned": 0,
+          "reassigned": 0
+        },
+        "vpns": {
+          "assigned": 0,
+          "reassigned": 0
+        },
+        "workerLoggingOverride": {
+          "enabled": false
+        },
+        "mqMessages": {
+          "base": 0,
+          "addOn": 0
+        },
+        "mqRequests": {
+          "base": 0,
+          "addOn": 0
+        },
+        "objectStoreRequestUnits": {
+          "base": 0,
+          "addOn": 0
+        },
+        "objectStoreKeys": {
+          "base": 0,
+          "addOn": 0
+        },
+        "mqAdvancedFeatures": {
+          "enabled": false
+        },
+        "gateways": {
+          "assigned": 0
+        },
+        "designCenter": {
+          "mozart": true,
+          "api": true,
+          "apiVisual": false,
+          "apiExample": false
+        },
+        "partnersProduction": {
+          "assigned": 0
+        },
+        "partnersSandbox": {
+          "assigned": 0
+        },
+        "tradingPartnersProduction": {
+          "assigned": 0
+        },
+        "tradingPartnersSandbox": {
+          "assigned": 0
+        },
+        "loadBalancer": {
+          "assigned": 0,
+          "reassigned": 0
+        },
+        "externalIdentity": true,
+        "autoscaling": false,
+        "armAlerts": true,
+        "apis": {
+          "enabled": true
+        },
+        "apiMonitoring": {
+          "schedules": 0
+        },
+        "apiCommunityManager": {
+          "enabled": false
+        },
+        "monitoringCenter": {
+          "productSKU": 0
+        },
+        "apiQuery": {
+          "enabled": false
+        },
+        "angGovernance": {
+          "level": -1
+        },
+        "crowd": {
+          "hideApiManagerDesigner": true,
+          "hideFormerApiPlatform": true,
+          "environments": true
+        },
+        "cam": {
+          "enabled": false
+        },
+        "exchange2": {
+          "enabled": false
+        },
+        "crowdSelfServiceMigration": {
+          "enabled": false
+        },
+        "kpiDashboard": {
+          "enabled": false
+        },
+        "pcf": false,
+        "appViz": false,
+        "runtimeFabric": false,
+        "anypointSecurityTokenization": {
+          "enabled": false
+        },
+        "anypointSecurityEdgePolicies": {
+          "enabled": false
+        },
+        "runtimeFabricCloud": {
+          "enabled": false
+        },
+        "serviceMesh": {
+          "enabled": true
+        },
+        "messaging": {
+          "assigned": 0
+        },
+        "workerClouds": {
+          "assigned": 0,
+          "reassigned": 0
+        }
+      }
+    },
+    "properties": {
+      "cs_auth": {
+        "activeOrganizationId": "ca0e1a7e-71a3-4463-bb20-c39a2955f8a5"
+      }
+    },
+    "memberOfOrganizations": [
+      {
+        "parentName": null,
+        "parentId": null,
+        "domain": "testorg-5",
+        "name": "TestOrg",
+        "id": "ca0e1a7e-71a3-4463-bb20-c39a2955f8a5",
+        "createdAt": "2020-07-21T19:41:18.887Z",
+        "updatedAt": "2020-07-21T19:41:18.887Z",
+        "ownerId": "82f48664-2c33-4135-96e5-eeefb7ddd007",
+        "clientId": "cc461062cdf54a9281a4b3e4e9fd9c46",
+        "idprovider_id": "mulesoft",
+        "isFederated": false,
+        "parentOrganizationIds": [],
+        "subOrganizationIds": [],
+        "tenantOrganizationIds": [],
+        "isMaster": true,
+        "subscription": {
+          "category": "Developer",
+          "type": "Trial",
+          "expiration": "2020-08-20T19:41:19.433Z"
+        }
+      }
+    ],
+    "contributorOfOrganizations": [
+      {
+        "parentName": null,
+        "parentId": null,
+        "domain": "testorg-5",
+        "name": "TestOrg",
+        "id": "ca0e1a7e-71a3-4463-bb20-c39a2955f8a5",
+        "createdAt": "2020-07-21T19:41:18.887Z",
+        "updatedAt": "2020-07-21T19:41:18.887Z",
+        "ownerId": "82f48664-2c33-4135-96e5-eeefb7ddd007",
+        "clientId": "cc461062cdf54a9281a4b3e4e9fd9c46",
+        "idprovider_id": "mulesoft",
+        "isFederated": false,
+        "parentOrganizationIds": [],
+        "subOrganizationIds": [],
+        "tenantOrganizationIds": [],
+        "isMaster": true,
+        "subscription": {
+          "category": "Developer",
+          "type": "Trial",
+          "expiration": "2020-08-20T19:41:19.433Z"
+        }
+      }
+    ]
+  }
+}
+
+.user.organization.id
+--------------------------------------------------
+curl --location --request GET 'https://anypoint.mulesoft.com/accounts/api/organizations/ca0e1a7e-71a3-4463-bb20-c39a2955f8a5/environments' \
+--header 'Authorization: Bearer c102c373-d025-43f0-8a60-16e5d8eafd90'
+
+{
+  "data": [
+    {
+      "id": "e85f11a9-0956-40ee-8af4-abbd5f04cacc",
+      "name": "Design",
+      "organizationId": "ca0e1a7e-71a3-4463-bb20-c39a2955f8a5",
+      "isProduction": false,
+      "type": "design",
+      "clientId": "06aac24c50e54b73a4638d1fa6e14b89"
+    },
+    {
+      "id": "8a395495-89bd-41a0-a8ea-60cda606c24a",
+      "name": "Sandbox",
+      "organizationId": "ca0e1a7e-71a3-4463-bb20-c39a2955f8a5",
+      "isProduction": false,
+      "type": "sandbox",
+      "clientId": "1d6e4bb5e1504fe29bc54ae8bb73d3a2"
+    }
+  ],
+  "total": 2
+}
+
+.data[] | select(.type=="sandbox")| .id
+--------------
+
+curl --location --request GET 'https://anypoint.mulesoft.com/hybrid/api/v1/applications' \
+--header 'X-ANYPNT-ENV-ID: 8a395495-89bd-41a0-a8ea-60cda606c24a' \
+--header 'X-ANYPNT-ORG-ID: ca0e1a7e-71a3-4463-bb20-c39a2955f8a5' \
+--header 'Authorization: Bearer c102c373-d025-43f0-8a60-16e5d8eafd90'
+
+{
+    "data": [
+        {
+            "id": 5507898,
+            "timeCreated": 1595438570603,
+            "timeUpdated": 1595513976485,
+            "name": "SampleApp",
+            "uptime": 681893,
+            "desiredStatus": "STARTED",
+            "lastReportedStatus": "STARTED",
+            "started": true,
+            "serverArtifacts": [
+                {
+                    "id": 6567326,
+                    "timeCreated": 1595438571019,
+                    "timeUpdated": 1595513979702,
+                    "artifactName": "SampleApp",
+                    "artifact": {
+                        "id": 5629352,
+                        "storageId": 5842504,
+                        "name": "SampleApp",
+                        "fileName": "sample-1.0.jar",
+                        "fileChecksum": "7ceaf6b6738d0936dafe5de0fd99975cff322483",
+                        "fileSize": 4438048,
+                        "timeUpdated": 1595513976761
+                    },
+                    "deploymentId": 5507898,
+                    "serverId": 3717286,
+                    "lastReportedStatus": "STARTED",
+                    "desiredStatus": "STARTED",
+                    "message": "",
+                    "discovered": false
+                }
+            ],
+            "artifact": {
+                "id": 5629352,
+                "storageId": 5842504,
+                "name": "SampleApp",
+                "fileName": "sample-1.0.jar",
+                "fileChecksum": "7ceaf6b6738d0936dafe5de0fd99975cff322483",
+                "fileSize": 4438048,
+                "timeUpdated": 1595513976761
+            },
+            "target": {
+                "id": 3717286,
+                "timeCreated": 1595417307675,
+                "timeUpdated": 1595417423756,
+                "name": "lla-demo-node1",
+                "type": "SERVER",
+                "serverType": "GATEWAY",
+                "muleVersion": "4.3.0",
+                "gatewayVersion": "4.3.0",
+                "agentVersion": "2.4.6",
+                "licenseExpirationDate": 1597968000000,
+                "certificateExpirationDate": 1658489307000,
+                "status": "RUNNING",
+                "addresses": [
+                    {
+                        "ip": "172.31.17.3",
+                        "networkInterface": "eth0"
+                    }
+                ],
+                "runtimeInformation": {
+                    "jvmInformation": {
+                        "runtime": {
+                            "name": "OpenJDK Runtime Environment",
+                            "version": "1.8.0_262-b10"
+                        },
+                        "specification": {
+                            "vendor": "Oracle Corporation",
+                            "name": "Java Platform API Specification",
+                            "version": "1.8"
+                        }
+                    },
+                    "osInformation": {
+                        "name": "Linux",
+                        "version": "4.18.0-193.el8.x86_64",
+                        "architecture": "amd64"
+                    },
+                    "muleLicenseExpirationDate": 1597968000000
+                }
+            }
+        },
+        {
+            "id": 5510826,
+            "timeCreated": 1595496586201,
+            "timeUpdated": 1595496961686,
+            "name": "SampleApp-AK",
+            "uptime": 17696509,
+            "desiredStatus": "STARTED",
+            "lastReportedStatus": "STARTED",
+            "started": true,
+            "serverArtifacts": [
+                {
+                    "id": 6571200,
+                    "timeCreated": 1595496586357,
+                    "timeUpdated": 1595496964546,
+                    "artifactName": "SampleApp-AK",
+                    "artifact": {
+                        "id": 5626751,
+                        "storageId": 5839674,
+                        "name": "SampleApp-AK",
+                        "fileName": "sample1234.jar",
+                        "fileChecksum": "c8b487054256f641892c385707e9613d4dbd1d72",
+                        "fileSize": 4432439,
+                        "timeUpdated": 1595496961946
+                    },
+                    "deploymentId": 5510826,
+                    "serverId": 3717286,
+                    "lastReportedStatus": "STARTED",
+                    "desiredStatus": "STARTED",
+                    "message": "",
+                    "discovered": false
+                }
+            ],
+            "artifact": {
+                "id": 5626751,
+                "storageId": 5839674,
+                "name": "SampleApp-AK",
+                "fileName": "sample1234.jar",
+                "fileChecksum": "c8b487054256f641892c385707e9613d4dbd1d72",
+                "fileSize": 4432439,
+                "timeUpdated": 1595496961946
+            },
+            "target": {
+                "id": 3717286,
+                "timeCreated": 1595417307675,
+                "timeUpdated": 1595417423756,
+                "name": "lla-demo-node1",
+                "type": "SERVER",
+                "serverType": "GATEWAY",
+                "muleVersion": "4.3.0",
+                "gatewayVersion": "4.3.0",
+                "agentVersion": "2.4.6",
+                "licenseExpirationDate": 1597968000000,
+                "certificateExpirationDate": 1658489307000,
+                "status": "RUNNING",
+                "addresses": [
+                    {
+                        "ip": "172.31.17.3",
+                        "networkInterface": "eth0"
+                    }
+                ],
+                "runtimeInformation": {
+                    "jvmInformation": {
+                        "runtime": {
+                            "name": "OpenJDK Runtime Environment",
+                            "version": "1.8.0_262-b10"
+                        },
+                        "specification": {
+                            "vendor": "Oracle Corporation",
+                            "name": "Java Platform API Specification",
+                            "version": "1.8"
+                        }
+                    },
+                    "osInformation": {
+                        "name": "Linux",
+                        "version": "4.18.0-193.el8.x86_64",
+                        "architecture": "amd64"
+                    },
+                    "muleLicenseExpirationDate": 1597968000000
+                }
+            }
+        }
+    ]
+}
+
+.data[] | select(.name == "SampleApp") | {applicationid:.id,targetId:.target.id,artifactname:.artifact.name}
+----------------------------------------------------------------
+curl --location --request PATCH 'https://anypoint.mulesoft.com/hybrid/api/v1/applications/5507898' \
+--header 'x-anypnt-env-id: 8a395495-89bd-41a0-a8ea-60cda606c24a' \
+--header 'x-anypnt-org-id: ca0e1a7e-71a3-4463-bb20-c39a2955f8a5' \
+--header 'Content-Type: multipart/form-data' \
+--header 'Authorization: Bearer c102c373-d025-43f0-8a60-16e5d8eafd90' \
+--form 'artifactName=SampleApp' \
+--form 'targetId=3717286' \
+--form 'file=@/C:/Users/gnvksk/Downloads/sample-1.0.jar'
+
+{
+    "data": {
+        "id": 5507898,
+        "timeCreated": 1595438570603,
+        "timeUpdated": 1595514669356,
+        "name": "SampleApp",
+        "uptime": 690821,
+        "desiredStatus": "UPDATED",
+        "lastReportedStatus": "STARTED",
+        "started": true,
+        "serverArtifacts": [
+            {
+                "id": 6567326,
+                "timeCreated": 1595438571019,
+                "timeUpdated": 1595514669357,
+                "artifactName": "SampleApp",
+                "artifact": {
+                    "id": 5629440,
+                    "storageId": 5842610,
+                    "name": "SampleApp",
+                    "fileName": "sample-1.0.jar",
+                    "fileChecksum": "7ceaf6b6738d0936dafe5de0fd99975cff322483",
+                    "fileSize": 0,
+                    "timeUpdated": 1595514669290
+                },
+                "deploymentId": 5507898,
+                "serverId": 3717286,
+                "lastReportedStatus": "STARTED",
+                "desiredStatus": "UPDATED",
+                "message": "",
+                "discovered": false
+            }
+        ],
+        "artifact": {
+            "id": 5629440,
+            "storageId": 5842610,
+            "name": "SampleApp",
+            "fileName": "sample-1.0.jar",
+            "fileChecksum": "7ceaf6b6738d0936dafe5de0fd99975cff322483",
+            "fileSize": 0,
+            "timeUpdated": 1595514669290
+        },
+        "target": {
+            "id": 3717286,
+            "timeCreated": 1595417307675,
+            "timeUpdated": 1595417423756,
+            "name": "lla-demo-node1",
+            "type": "SERVER",
+            "serverType": "GATEWAY",
+            "muleVersion": "4.3.0",
+            "gatewayVersion": "4.3.0",
+            "agentVersion": "2.4.6",
+            "licenseExpirationDate": 1597968000000,
+            "certificateExpirationDate": 1658489307000,
+            "status": "RUNNING",
+            "addresses": [
+                {
+                    "ip": "172.31.17.3",
+                    "networkInterface": "eth0"
+                }
+            ],
+            "runtimeInformation": {
+                "jvmInformation": {
+                    "runtime": {
+                        "name": "OpenJDK Runtime Environment",
+                        "version": "1.8.0_262-b10"
+                    },
+                    "specification": {
+                        "vendor": "Oracle Corporation",
+                        "name": "Java Platform API Specification",
+                        "version": "1.8"
+                    }
+                },
+                "osInformation": {
+                    "name": "Linux",
+                    "version": "4.18.0-193.el8.x86_64",
+                    "architecture": "amd64"
+                },
+                "muleLicenseExpirationDate": 1597968000000
+            }
+        }
+    }
+}
+
+.data | {desiredStatus:.desiredStatus,lastReportedStatus:.lastReportedStatus,started:.started}
+
+----------------------------------------------------------------
+
+
